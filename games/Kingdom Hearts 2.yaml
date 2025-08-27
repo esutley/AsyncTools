@@ -46,13 +46,12 @@ Kingdom Hearts 2:
     Aerial Recovery: 1
   
   triggers:
-    #Turn off the need to kill Final Xemnas if Lucky Emblem Hunt and set other details
+    #Set Emblem amounts
     - option_name: Goal
       option_category: Kingdom Hearts 2
       option_result: lucky_emblem_hunt
       options:
         Kingdom Hearts 2:
-          FinalXemnas: false
           LuckyEmblemsAmount: random-range-40-50
           LuckyEmblemsRequired: random-range-30-39
           +local_items: [Lucky Emblem]
@@ -62,6 +61,8 @@ Kingdom Hearts 2:
       option_result: three_proofs
       options:
         Kingdom Hearts 2:
+          SuperBosses: true
+          FinalFormLogic: light_and_darkness
           +local_items: [Proof]
     #Turn superbosses and Paradox Cup back on for Hitlist and set details (bounties are always local, no need to set item local)
     - option_name: Goal
