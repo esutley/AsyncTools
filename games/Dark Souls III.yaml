@@ -45,7 +45,9 @@
   smooth_soul_items: 'true'
   smooth_upgrade_items: 'true'
   smooth_upgraded_weapons: 'true'
-  randomize_enemies: 'false'
+  randomize_enemies: 
+    'false': 75
+    'true': 25
   simple_early_bosses: 'true'
   scale_enemies: 'true'
   randomize_mimics_with_enemies: 'false'
@@ -59,7 +61,7 @@
     # Can be unobtainable in certain local locations
     ['Path of the Dragon']
   exclude_locations:
-    ['Small Souls', 'Miscellaneous', 'Hidden', 'Small Crystal Lizards', 'Upgrade', "AL: Aldrich's Ruby - dark cathedral, miniboss"]
+    ['Small Souls', 'Miscellaneous', 'Hidden', 'Small Crystal Lizards', 'Upgrade']
   excluded_location_behavior: forbid_useful
   missable_location_behavior: forbid_useful
   triggers:
